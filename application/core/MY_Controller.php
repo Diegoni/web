@@ -23,7 +23,7 @@ class MY_Controller extends CI_Controller{
         if($this->_model != ''){
             $this->load->model($this->_model, 'model');    
         }
-        //$this->load->model('m_priv_rol');
+        $this->load->model('m_menus');
     }
     
     
@@ -203,7 +203,7 @@ class MY_Controller extends CI_Controller{
 	    if($this->session->userdata('logged_in')){
             $session = $this->session->userdata('logged_in');
                 
-            //$db['menu']             = $this->m_priv_rol->getMenu($session['rol_id']);
+            $db['menu']             = $this->m_menus->getRegistros();
             $db['session_data']     = $this->_session_data;
             $db['subjet']           = ucwords($this->_subject);
                 

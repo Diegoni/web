@@ -8,7 +8,7 @@
                 <li class="header">
                 </li>
                 <?php
-                /*
+                
                 foreach ($menu as $row) {
                     if($this->uri->segment(1).'/'.$this->uri->segment(2).'/' == $row->link){
                         echo '<li class="treeview active">';
@@ -17,10 +17,10 @@
                     }
                    
                     echo '<a href="'.base_url().'index.php/'.$row->link.'">';
-                    echo '<i class="fa fa-circle-o"></i> '.$row->pri_desc.'</a>';
+                    echo '<i class="fa fa-circle-o"></i> '.$row->menu.'</a>';
                     echo '</li>';
                 }
-                */
+                
                 ?>
             </ul>
         </ul>            

@@ -10,6 +10,8 @@ $lang['agregar_per']        = "Agregar y permanecer";
 $lang['apellido']           = "Apellido";
 $lang['advertencia']        = "Advertencia";
 $lang['auditorias']         = "Auditorias";
+$lang['asunto']             = "Asunto";
+$lang['articulo']           = "Articulo";
 
 // B
 $lang['banco']              = "Banco";
@@ -26,6 +28,7 @@ $lang['cuit']               = "Cuit";
 
 // D
 $lang['domicilio']          = "Domicilio";
+$lang['date_add']           = "Fecha alta";
 
 // E
 $lang['entidad']            = "Entidad";
@@ -55,6 +58,7 @@ $lang['link']               = "Link";
 $lang['modificar']          = "Modificar";
 $lang['monto']              = "Monto";
 $lang['menu']               = "Menu";
+$lang['mensaje']            = "Mensaje";
 
 // N
 $lang['nombre']             = "Nombre";
@@ -67,6 +71,7 @@ $lang['new_password']       = "Nueva Password";
 $lang['olvidaste_pass']     = "Olvidaste tu pass?";
 $lang['opciones']           = "Opciones";
 $lang['only_999']           = "Solo usuario 999";
+$lang['orden']              = "Orden";
 
 // P
 $lang['pais']               = "Pais";
@@ -83,6 +88,7 @@ $lang['responsab']          = "Responsable";
 $lang['regs']               = "Regs";
 $lang['rol']                = "Rol";
 $lang['reparticion']        = "Reparticion";
+$lang['remitente']          = "Remitente";
 
 // S
 $lang['salir']              = "Salir";

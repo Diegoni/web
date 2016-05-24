@@ -5,7 +5,7 @@
 				<span class="logo-mini"><i class="fa fa-briefcase"></i></span>
 				<?php
 				$font_size = 14;
-				echo '<span class="logo-lg" style="font-size: '.$font_size.'px">XN</span>';
+				echo '<span class="logo-lg" style="font-size: '.$font_size.'px">Gestión web</span>';
 				?>
 			</a>
 			<nav class="navbar navbar-static-top" role="navigation">

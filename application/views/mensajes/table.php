@@ -4,9 +4,10 @@
  --------------------------------------------------------------------------------*/
  
 $cabeceras = array(
-    lang('menu'),
-    lang('articulo'),
-    lang('orden'),
+    lang('asunto'),
+    lang('mensaje'),
+    lang('remitente'),
+    lang('date_add'),
     lang('opciones'),
 );
 
@@ -20,7 +21,7 @@ if(isset($mensaje)){
             Tabla
  --------------------------------------------------------------------------------*/
  
-$html .= getExportsButtons($cabeceras, table_add($subjet));
+$html .= getExportsButtons($cabeceras);
 
 $html .= start_table($cabeceras);
 
