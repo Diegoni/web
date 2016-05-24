@@ -8,6 +8,7 @@ $cabeceras = array(
     lang('mensaje'),
     lang('remitente'),
     lang('date_add'),
+    lang('visto'),
     lang('opciones'),
 );
 
@@ -28,11 +29,12 @@ $html .= start_table($cabeceras);
 if($registros){
     foreach ($registros as $row) {
         $registro = array(
-            /*          ---- Array con los valores de la fila
-            $row->nombre,
-            $row->apellido,
-            table_upd($subjet, $row->id_usuario),
-            */
+            $row->asunto,
+            $row->mensaje,
+            $row->remitente,
+            $row->date_add,
+            setSpan($row->visto),
+            table_upd($subjet, $row->id_mensaje),
         );
         
         $html .= setTableContent($registro);    

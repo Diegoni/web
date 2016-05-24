@@ -27,11 +27,11 @@ $html .= start_table($cabeceras);
 if($registros){
     foreach ($registros as $row) {
         $registro = array(
-            /*          ---- Array con los valores de la fila
-            $row->nombre,
-            $row->apellido,
-            table_upd($subjet, $row->id_usuario),
-            */
+            $row->menu,
+            $row->articulo,
+            $row->orden,
+            table_upd($subjet, $row->id_articulo),
+            
         );
         
         $html .= setTableContent($registro);    

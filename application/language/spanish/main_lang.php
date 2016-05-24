@@ -115,6 +115,7 @@ $lang['ubicacion']          = "Ubicación";
 
 // V
 $lang['valor']              = "Valor";
+$lang['visto']              = "Visto";
 
 // W
 $lang['warning']            = "Aviso";

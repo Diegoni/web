@@ -9,10 +9,8 @@ foreach($js_files as $file){
     $html .= '<script src="'.$file.'"></script>';
 }
 
-
 $html .= $output;
 $html .= end_content(); 
-
 
 echo $html; 
 ?>
