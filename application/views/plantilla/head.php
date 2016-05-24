@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Gestión</title>
+    <title>Gestión web</title>
     <?php
     echo css_libreria('bootstrap/css/bootstrap.css');
 	echo css_libreria('dist/css/AdminLTE.min.css');

@@ -17,7 +17,7 @@
                     }
                    
                     echo '<a href="'.base_url().'index.php/'.$row->link.'">';
-                    echo '<i class="fa fa-circle-o"></i> '.$row->menu.'</a>';
+                    echo '<i class="'.$row->icono.'"></i> '.$row->menu.'</a>';
                     echo '</li>';
                 }
                 
