@@ -2,8 +2,8 @@
 
 class Articulos extends MY_Controller {
 
-	protected $_subject = 'articulos';                 // Nombre con el que se va a identificar el modulo
-    protected $_model   = 'm_articulos';               // Modelo principal, la vista tabla automatica
+	protected $_subject = 'articulos';              
+    protected $_model   = 'm_articulos';            
     
     function __construct(){
         parent::__construct(
@@ -11,25 +11,21 @@ class Articulos extends MY_Controller {
             $model      = $this->_model 
         );
         
-        $this->load->model($this->_model, 'model'); // Linea obligatoria  
+        $this->load->model($this->_model, 'model');   
     } 
     
 /*-------------------------------------------------------------------------------- 
             Ejemplo de abm
 --------------------------------------------------------------------------------*/    
-/*    
-    function abm($id = NULL){                           // Funcion para abm
-        $db['otrom']    = $this->m_otrom->getRegistros(); // Carga para el select
-        
+  
+    function abm($id = NULL){                         
         $db['campos']   = array(
-            array('campo',    'restricciones', 'tags'), // cargar un input
-            array('select',   'id_campo',  'campo', $db['otromodelo']), // cargar un select
-            array('checkbox', 'campo'),                 // cargar un checkbox
+            array('menu',     'onlyChar', 'required'), 
+            array('articulo', '',       'required'),
+            array('orden',    'onlyInt', 'required'),
         );
         
-        $this->armar_abm($id, $db);                     // Envia todo a la plantilla de la pagina
+        $this->armar_abm($id, $db); 
     }
- * 
- */
 }
 ?>

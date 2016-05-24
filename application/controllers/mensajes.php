@@ -17,19 +17,17 @@ class Mensajes extends MY_Controller {
 /*-------------------------------------------------------------------------------- 
             Ejemplo de abm
 --------------------------------------------------------------------------------*/    
-/*    
-    function abm($id = NULL){                           // Funcion para abm
-        $db['otrom']    = $this->m_otrom->getRegistros(); // Carga para el select
-        
+    
+    function abm($id = NULL){                           
         $db['campos']   = array(
-            array('campo',    'restricciones', 'tags'), // cargar un input
-            array('select',   'id_campo',  'campo', $db['otromodelo']), // cargar un select
-            array('checkbox', 'campo'),                 // cargar un checkbox
+            array('asunto',    'onlyChar', 'required'), 
+            array('mensaje',   'onlyChar', 'required'), 
+            array('remitente', 'onlyChar', 'required'), 
+            array('date_add',  'onlyChar', 'required'), 
+            array('checkbox', 'visto'),                 
         );
         
         $this->armar_abm($id, $db);                     // Envia todo a la plantilla de la pagina
     }
- * 
- */
 }
 ?>
