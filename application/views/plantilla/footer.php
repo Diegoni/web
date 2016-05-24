@@ -3,7 +3,7 @@
 			<div class="pull-right hidden-xs">
 				<b><?php echo $this->lang->line('version')?></b> 1.0.2
 			</div>
-			<strong><a href="">XN Group</a></strong>
+			<strong><a href="">Gestión web</a></strong>
 		</footer>
 
 		<div class="control-sidebar-bg"></div>

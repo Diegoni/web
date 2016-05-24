@@ -175,13 +175,15 @@ window.onload = createUploader;
 				<div class='photo-box'>
 					<a href='<?php echo $photo->image_url?>' <?php if (isset($photo->title)) {echo 'title="'.str_replace('"',"&quot;",$photo->title).'" ';}?>target='_blank' class="color-box" rel="color-box" tabindex="-1"><img src='<?php echo $photo->thumbnail_url?>' width='90' height='60' class='basic-image' /></a>
 					<?php if($title_field !== null){ ?>
-					<textarea class="ic-title-field" data-id="<?php echo $photo->$primary_key; ?>" autocomplete="off" ><?php echo $photo->$title_field; ?></textarea>
-					<div class="clear"></div><?php }?>
+    					<textarea class="ic-title-field" data-id="<?php echo $photo->$primary_key; ?>" autocomplete="off" ><?php echo $photo->image_url; ?></textarea>
+    					<div class="clear"></div><?php 
+                    }?>
 					<?php if($has_priority_field){?><div class="move-box"></div><?php }?>
 					<?php if(!$unset_delete){?><div class='delete-box'>
 						<a href='<?php echo $photo->delete_url?>' class='delete-anchor' tabindex="-1"><?php echo $this->l('list_delete');?></a>
 					</div><?php }?>
 					<div class="clear"></div>
+					
 				</div>
 			</li>
 	<?php }?>

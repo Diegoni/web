@@ -12,5 +12,6 @@ foreach($js_files as $file){
 $html .= $output;
 $html .= end_content(); 
 
+
 echo $html; 
 ?>

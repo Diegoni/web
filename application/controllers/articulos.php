@@ -20,9 +20,8 @@ class Articulos extends MY_Controller {
   
     function abm($id = NULL){                         
         $db['campos']   = array(
-            array('menu',     'onlyChar', 'required'), 
-            array('articulo', '',       'required'),
-            array('orden',    'onlyInt', 'required'),
+            array('menu',     'onlyChar',   'required'), 
+            array('orden',    'onlyInt',    'required'),
         );
         
         $this->armar_abm($id, $db); 

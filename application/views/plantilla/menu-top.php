@@ -20,7 +20,7 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li class="user-header">
-									<img src="<?php echo base_url().'uploads/img/user.png' ?>" class="img-circle" alt="User Image">
+									<img src="<?php echo base_url().'archivos/imagenes/user.png' ?>" class="img-circle" alt="User Image">
 									<p>
 										<?php echo $session_data['usuario'] ?>
 										<small><?php echo lang('date_add').' '.formatDate($session_data['date_add']) ?></small>

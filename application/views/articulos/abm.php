@@ -28,11 +28,19 @@ if(isset($mensaje)){
     $html .= setMensaje($mensaje);
 }
 
+$textArea = 
+'<div class="form-group">'.setLabel($this->lang->line('mensaje')).'
+    <div class="col-sm-11">
+        <textarea class="form-control" id="articulo" name="articulo">'.$registro_values['articulo'].'</textarea>
+    </div>
+</div>';
+
 /*--------------------------------------------------------------------------------  
             Formulario
  --------------------------------------------------------------------------------*/ 
  
 $html .= '<form action="#" method="post" class="form-horizontal">';
+$html .= $textArea;
 $html .= setForm($campos, $registro_values, $registro, $id_table);
 $html .= '</form>';
 
@@ -56,4 +64,7 @@ echo $html;
 <script>
 $("[data-inputmask]").inputmask();
 $(".checkbox").bootstrapSwitch();
+$(function () {
+    CKEDITOR.replace('articulo');
+});
 </script>
