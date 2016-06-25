@@ -5,7 +5,6 @@
  
 $cabeceras = array(
     lang('menu'),
-    lang('articulo'),
     lang('orden'),
     lang('opciones'),
 );
@@ -28,7 +27,6 @@ if($registros){
     foreach ($registros as $row) {
         $registro = array(
             $row->menu,
-            $row->articulo,
             $row->orden,
             table_upd($subjet, $row->id_articulo),
             
