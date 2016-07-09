@@ -16,8 +16,8 @@
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                  </button>
-	                  <a  href="#">
-	                  	<img src="<?php echo $base_url?>images/logo3.png"  height="50px" style="height: 75; margin-top: 25; margin-left: 50;">
+	                  <a  href="http://czconsultoria.com.ar/">
+	                  	<img src="<?php echo $base_url?>images/logo3.png"  height="65px" style="height: 100; margin-top: 15; margin-left: 50;">
 	                  	</a>
 	                </div>
 
@@ -30,7 +30,7 @@
 	                  	
 	                  	if($menus){
 	                  		foreach ($menus as $row) {
-								$menu .= '<li><a href="http://localhost/web/index.php/web/articulo/'.$row->id_articulo.'">'.$row->menu.'</a></li>';
+								$menu .= '<li><a href="http://czconsultoria.com.ar/index.php/web/articulo/'.$row->id_articulo.'">'.$row->menu.'</a></li>';
 							}
 	                  	}
 						
@@ -57,15 +57,8 @@
 	                </div>
 	            </div>
 	            
-	            
-	            
-	            
-	            
-	            
-	            
-	            
-	            
-	            <div class="row">
+	        <div class="container">
+	        <div class="row">
 			<div class="col-md-8 col-md-offset-2">
                 <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000" style="padding-bottom: 25;">
 				  <!-- Carousel indicators -->
@@ -78,27 +71,27 @@
 				  <div class="carousel-inner">
 				    <div class="active item">
 				    	<blockquote>
-				    		<p style="color: #f0b32f; font-family: 'Montserrat', sans-serif; font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    		<p class="text-carrusel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
 				    	</blockquote>
-				    	<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+				    	<div class="profile-circle text-carrusel"></div>
 				    </div>
 				    <div class="item">
 				    	<blockquote>
-				    		<p style="color: #f0b32f; font-family: 'Montserrat', sans-serif; font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    		<p class="text-carrusel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
 				    	</blockquote>
-				    	<div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+				    	<div class="profile-circle text-carrusel"></div>
 				    </div>
 				    <div class="item">
 				    	<blockquote>
-				    		<p style="color: #f0b32f; font-family: 'Montserrat', sans-serif; font-size: 11px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    		<p class="text-carrusel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
 				    	</blockquote>
-				    	<div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+				    	<div class="profile-circle text-carrusel"></div>
 				    </div>
 				  </div>
 				</div>
 			</div>							
 		</div>
-	            
+	     </div>       
 	            
 	            
 	            

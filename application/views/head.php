@@ -28,7 +28,7 @@
 
     <!-- Style -->
     <link href="<?php echo $base_url?>css/style.css" rel="stylesheet">
-
+	
     <!-- Responsive CSS -->
     <link href="<?php echo $base_url?>css/responsive.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
