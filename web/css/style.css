@@ -1,5 +1,13 @@
 body{
 	font-family: 'Dosis', sans-serif;
+	background: #efb32f; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#efb32f, #ef7a2f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#efb32f, #ef7a2f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#efb32f, #ef7a2f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#efb32f, #ef7a2f);
+}
+.container{
+	background: #fff;
 }
 p{
 	font-family: 'Montserrat', sans-serif;
@@ -395,9 +403,18 @@ padding-top: 10px;
 
 /*Footer*/
 footer{
-	background-color: #f1f1f1;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	background-color: #2e3640;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.text-footer{
+	color: #f0b32f;
+	font-weight: bold;
+}
+
+footer .container{
+	background-color: #2e3640;
 }
 .footer_logo{}
 .footer_logo img{}

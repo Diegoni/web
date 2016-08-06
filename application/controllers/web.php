@@ -1,7 +1,20 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Web extends CI_Controller {
-	public function articulo($id_articulo = NULL){
+class Web extends CI_Controller 
+{
+	
+	
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+
+		Carga el contenido del articulos
+
+-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------*/
+
+	
+	public function articulo($id_articulo = NULL)
+	{
 		if($this->input->post('message')){
 			$this->load->library('email');
 			$this->load->model('m_mensajes');
@@ -49,6 +62,7 @@ class Web extends CI_Controller {
 		}
 		
 	    $db['base_url'] =  base_url().'web/';
+		$db['base_menu'] =  base_url();
 		
 		$this->load->view('head', $db);
 		$this->load->view('menu');

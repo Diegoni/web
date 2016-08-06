@@ -1,11 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Mensajes extends MY_Controller {
-
+class Mensajes extends MY_Controller 
+{
 	protected $_subject = 'mensajes';                 // Nombre con el que se va a identificar el modulo
     protected $_model   = 'm_mensajes';               // Modelo principal, la vista tabla automatica
     
-    function __construct(){
+    function __construct()
+    {
         parent::__construct(
             $subject    = $this->_subject,
             $model      = $this->_model 
@@ -14,11 +15,18 @@ class Mensajes extends MY_Controller {
         $this->load->model($this->_model, 'model'); // Linea obligatoria  
     } 
     
-/*-------------------------------------------------------------------------------- 
-            Ejemplo de abm
---------------------------------------------------------------------------------*/    
+
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+
+		abm
+
+-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------*/
+   
     
-    function abm($id = NULL){                           
+    function abm($id = NULL)
+    {                           
         $db['campos']   = array(
             array('asunto',    'onlyChar', 'required'), 
             array('mensaje',   'onlyChar', 'required'), 

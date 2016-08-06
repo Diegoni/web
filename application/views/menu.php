@@ -1,115 +1,114 @@
 <body>
-                <!-- Preloader -->
-                <div id="preloader">
-                    <div id="status">&nbsp;</div>
-                </div>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
 
-    <header id="HOME" style="background-position: 50% -125px;">
-	        <div class="section_overlay">
-	            <nav class="navbar navbar-default navbar-fixed-top" style="min-height: 130;">
-	              <div class="container">
-	                <!-- Brand and toggle get grouped for better mobile display -->
-	                <div class="navbar-header">
-	                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                    <span class="sr-only">Toggle navigation</span>
+
+<!---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+
+		Menu
+
+-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------->
+
+	<header id="HOME" style="background-position: 50% -125px;">
+		<div class="section_overlay">
+			<nav class="navbar navbar-default navbar-fixed-top" style="min-height: 130;">
+				<div class="navbar-header">
+	            	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                	<span class="sr-only">Toggle navigation</span>
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
-	                  </button>
-	                  <a  href="http://czconsultoria.com.ar/">
+	               	</button>
+	                <a  href="<?php echo $base_url?>">
 	                  	<img src="<?php echo $base_url?>images/logo3.png"  height="65px" style="height: 100; margin-top: 15; margin-left: 50;">
-	                  	</a>
-	                </div>
+	                </a>
+	            </div>
 
-	                <!-- Collect the nav links, forms, and other content for toggling -->
-	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	                  <ul class="nav navbar-nav navbar-right" style="position: absolute; bottom: 0; right: 25; ">
-	                  	<?php
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	            	<ul class="nav navbar-nav navbar-right" style="position: absolute; bottom: 0; right: 25; ">
+	                	<?php
 	                  	$menu = '';
 						$contenido = '';
 	                  	
 	                  	if($menus){
 	                  		foreach ($menus as $row) {
-								$menu .= '<li><a href="http://czconsultoria.com.ar/index.php/web/articulo/'.$row->id_articulo.'">'.$row->menu.'</a></li>';
+								$menu .= '<li><a href="'.$base_menu.'/index.php/web/articulo/'.$row->id_articulo.'">'.$row->menu.'</a></li>';
 							}
 	                  	}
 						
 						echo $menu;
 	                  	?>
-	                  </ul>
-	                </div><!-- /.navbar-collapse -->
-	              </div><!-- /.container -->
-	            </nav> 
-	            
-	            <?php if(!$id_articulo){ ?>
-	            	
-	            	
+					</ul>
+				</div>
+			</nav> 
+		</div>
+	</header>
+	
+	
+<!---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-md-12 text-center">
-	                        <div class="home_text wow fadeInUp animated">
-	                            <h2>consultoria en calidad</h2>
-	                            <p>Lic. Cintia Zacaria</p>
-	                            <img src="<?php echo $base_url?>images/shape.png" alt="">                        
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	            
-	        <div class="container">
-	        <div class="row">
+		Home del sitio
+
+-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------->  
+          
+          
+	<?php if(!$id_articulo){ ?>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="home_text wow fadeInUp animated">
+					<h2>consultoria en calidad</h2>
+					<p>Lic. Cintia Zacaria</p>
+					<img src="<?php echo $base_url?>images/shape.png" alt="">                        
+				</div>
+			</div>
+		</div>
+	    
+	    <!-- Carrusel -->       
+		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-                <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000" style="padding-bottom: 25;">
-				  <!-- Carousel indicators -->
-                  <ol class="carousel-indicators">
-				    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-				    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
-				  </ol>
-				  <!-- Carousel items -->
-				  <div class="carousel-inner">
-				    <div class="active item">
-				    	<blockquote>
-				    		<p class="text-carrusel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-				    	</blockquote>
-				    	<div class="profile-circle text-carrusel"></div>
-				    </div>
-				    <div class="item">
-				    	<blockquote>
-				    		<p class="text-carrusel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-				    	</blockquote>
-				    	<div class="profile-circle text-carrusel"></div>
-				    </div>
-				    <div class="item">
-				    	<blockquote>
-				    		<p class="text-carrusel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-				    	</blockquote>
-				    	<div class="profile-circle text-carrusel"></div>
-				    </div>
-				  </div>
+				<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000" style="padding-bottom: 25;">
+				  	<!-- Carousel indicators -->
+                	<ol class="carousel-indicators">
+					    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+					    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+					    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+				  	</ol>
+				  	<!-- Carousel items -->
+				  	<div class="carousel-inner">
+					    <div class="active item">
+					    	<blockquote>
+					    		<p class="text-carrusel">
+					    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
+					    		</p>
+					    	</blockquote>
+					    	<div class="profile-circle text-carrusel"></div>
+					    </div>
+					    <div class="item">
+					    	<blockquote>
+					    		<p class="text-carrusel">
+					    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
+					    		</p>
+					    	</blockquote>
+					    	<div class="profile-circle text-carrusel"></div>
+					    </div>
+					    <div class="item">
+					    	<blockquote>
+					    		<p class="text-carrusel">
+					    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
+					    		</p>
+					    	</blockquote>
+					    	<div class="profile-circle text-carrusel"></div>
+					    </div>
+				  	</div>
 				</div>
 			</div>							
 		</div>
-	     </div>       
-	            
-	            
-	            
-	            
-	            
-
-				<?php } ?>
-				
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-md-12 text-center">
-	                        <div class="scroll_down">
-                            <a href="#SERVICE"></a>
-	                            <h4></h4>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>            
-	        </div>  
-	    </section>         
-    </header>
+	</div>       
+	<?php } ?>

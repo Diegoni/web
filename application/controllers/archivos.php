@@ -1,11 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Archivos extends MY_Controller {
-
+class Archivos extends MY_Controller 
+{
     protected $_subject = 'archivos';                 // Nombre con el que se va a identificar el modulo
     protected $_model   = 'm_archivos';               // Modelo principal, la vista tabla automatica
     
-    function __construct(){
+    function __construct()
+    {
         parent::__construct(
             $subject    = $this->_subject,
             $model      = $this->_model 
@@ -16,7 +17,18 @@ class Archivos extends MY_Controller {
     	$this->load->library('image_CRUD');
 	}
 	
-	function _example_output($output = null){
+	
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+
+		Crud vista
+
+-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------*/
+	
+	
+	function _example_output($output = null)
+	{
 	    $db['menu']             = $this->m_menus->getRegistros();
         $db['subjet']           = ucwords($this->_subject);
             
@@ -28,7 +40,17 @@ class Archivos extends MY_Controller {
 	}
 
 
-	function abm(){
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+
+		Crud imagenes
+
+-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------*/
+
+
+	function abm()
+	{
 		$image_crud = new image_CRUD();
 	
 		$image_crud->set_primary_key_field('id_archivo');

@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Articulos extends MY_Controller {
-
+class Articulos extends MY_Controller 
+{
 	protected $_subject = 'articulos';              
     protected $_model   = 'm_articulos';            
     
@@ -14,11 +14,18 @@ class Articulos extends MY_Controller {
         $this->load->model($this->_model, 'model');   
     } 
     
-/*-------------------------------------------------------------------------------- 
-            Ejemplo de abm
---------------------------------------------------------------------------------*/    
+	
+/*---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+
+		Crud vista
+
+-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------*/
+   
   
-    function abm($id = NULL){                         
+    function abm($id = NULL)
+    {                         
         $db['campos']   = array(
             array('menu',     'onlyChar',   'required'), 
             array('orden',    'onlyInt',    'required'),
