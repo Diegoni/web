@@ -15,7 +15,7 @@
 
 	<header id="HOME" style="background-position: 50% -125px;">
 		<div class="section_overlay">
-			<nav class="navbar navbar-default navbar-fixed-top" style="min-height: 130;">
+			<nav class="navbar navbar-default" style="min-height: 130;">
 				<div class="navbar-header">
 	            	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 	                	<span class="sr-only">Toggle navigation</span>
@@ -36,7 +36,12 @@
 	                  	
 	                  	if($menus){
 	                  		foreach ($menus as $row) {
-								$menu .= '<li><a href="'.$base_menu.'/index.php/web/articulo/'.$row->id_articulo.'">'.$row->menu.'</a></li>';
+	                  			if($id_articulo == $row->id_articulo){
+	                  				$menu .= '<li><a href="'.$base_menu.'/index.php/web/articulo/'.$row->id_articulo.'" class="li_active">'.$row->menu.'</a></li>';
+	                  			} else {
+	                  				$menu .= '<li><a href="'.$base_menu.'/index.php/web/articulo/'.$row->id_articulo.'">'.$row->menu.'</a></li>';
+	                  			}
+								
 							}
 	                  	}
 						
@@ -72,7 +77,7 @@
 	    
 	    <!-- Carrusel -->       
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-6 col-md-offset-2">
 				<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000" style="padding-bottom: 25;">
 				  	<!-- Carousel indicators -->
                 	<ol class="carousel-indicators">
@@ -108,6 +113,11 @@
 					    </div>
 				  	</div>
 				</div>
+			</div>	
+			<div class="col-md-2">
+				<center>
+					<img src="<?php echo base_url(),'web/images/muneco.png'?>" class="img-responsive">
+				</center>
 			</div>							
 		</div>
 	</div>       

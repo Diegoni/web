@@ -11,9 +11,11 @@ $contenido = '';
 if($articulos){
 	foreach ($articulos as $row) {
 		$final = str_replace('#base_url#', $base_url, $row->articulo);
+		$contenido .='<div class="container">';
 		$contenido .='<section id="'.$row->menu.'">';
 		$contenido .= $final;
-		$contenido .= '</section>';	  
+		$contenido .= '</section>';	
+		$contenido .= '</div>';  
 	}
 }
 	
