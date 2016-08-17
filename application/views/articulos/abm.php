@@ -29,7 +29,7 @@ if(isset($mensaje)){
 }
 
 $textArea = 
-'<div class="form-group">'.setLabel($this->lang->line('mensaje')).'
+'<div class="form-group">'.setLabel(lang('articulo')).'
     <div class="col-sm-11">
         <textarea class="form-control" id="articulo" name="articulo">'.$registro_values['articulo'].'</textarea>
     </div>

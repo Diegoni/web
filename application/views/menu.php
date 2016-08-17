@@ -90,7 +90,7 @@
 					    <div class="active item">
 					    	<blockquote>
 					    		<p class="text-carrusel">
-					    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
+					    			Calidad significa hacer lo correcto cuando nadie te está mirando. <i>Henry Ford.</i>
 					    		</p>
 					    	</blockquote>
 					    	<div class="profile-circle text-carrusel"></div>
@@ -98,7 +98,7 @@
 					    <div class="item">
 					    	<blockquote>
 					    		<p class="text-carrusel">
-					    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
+					    			La calidad de vida de una persona es directamente proporcional a su compromiso con la excelencia, independientemente de su campo de actividad. <i>Vince Lombardi.</i>
 					    		</p>
 					    	</blockquote>
 					    	<div class="profile-circle text-carrusel"></div>
@@ -106,11 +106,19 @@
 					    <div class="item">
 					    	<blockquote>
 					    		<p class="text-carrusel">
-					    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.
+					    			La calidad es nuestra mejor garantía de la fidelidad de los clientes, nuestra más fuerte defensa contra la competencia y el único camino para el crecimiento. <i>Jack Welch.</i>
 					    		</p>
 					    	</blockquote>
 					    	<div class="profile-circle text-carrusel"></div>
 					    </div>
+					    <div class="item">
+                            <blockquote>
+                                <p class="text-carrusel">
+                                    Ninguna empresa puede ser mejor o peor que las personas que la integran. <i>Kaoru Ishikawa.</i>
+                                </p>
+                            </blockquote>
+                            <div class="profile-circle text-carrusel"></div>
+                        </div>
 				  	</div>
 				</div>
 			</div>	
