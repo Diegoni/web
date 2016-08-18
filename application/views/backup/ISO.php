@@ -15,8 +15,8 @@
 <section class="contact" id="CONTACT">        
 	<div class="container">            
 		<div class="row">                
-			<div class="col-md-6 wow fadeInLeft animated">					
-				<h3>Beneficios de la Certificación ISO 9001:2008/2015: </h3>					
+			<div class="col-md-6 single_service wow fadeInLeft animated" data-wow-delay="1s">					
+				<h2 class="text-center">Beneficios de la Certificación ISO 9001:2008/2015: </h2>					
 				<ul>						
 					<li class="new_list">Detectar y satisfacer los requerimientos desus Clientes.</li>						
 					<li class="new_list">Mejorar el desempeño y la productividad.</li>						
@@ -31,4 +31,22 @@
 				</center>				
 			</div>								 
 			
-			<div class="col-md-6 wow fadeInRight animated">					<h3>BUENAS PRÁCTICAS DE MANUFACTURA (BPM) </h3>					<p>Las BPM son una herramienta básica para la obtención de productos 					seguros para el consumo humano, que se centralizan en la higiene y forma de manipulación.<br>					Las incumbencias de las BPM son:</p>					<ul>						<li class="new_list">Materias Primas</li>						<li class="new_list">Establecimientos</li>						<li class="new_list">Personal</li>						<li class="new_list">Higiene en la elaboración</li>						<li class="new_list">Producto Final</li>						<li class="new_list">Control en la producción</li>						<li class="new_list">Documentación</li>					</ul>									</div>			</div>		</dialog>	</div>
+			<div class="col-md-6 single_service wow fadeInRight animated" data-wow-delay="2s">					
+			    <h2 class="text-center">BUENAS PRÁCTICAS DE MANUFACTURA (BPM) </h2>					
+			    <p>
+                    Las BPM son una herramienta básica para la obtención de productos seguros para el consumo humano, que se centralizan en la higiene y forma de manipulación.<br>					
+    			    Las incumbencias de las BPM son:
+			    </p>					
+			    <ul>						
+			        <li class="new_list">Materias Primas</li>						
+			        <li class="new_list">Establecimientos</li>						
+			        <li class="new_list">Personal</li>						
+			        <li class="new_list">Higiene en la elaboración</li>						
+			        <li class="new_list">Producto Final</li>						
+			        <li class="new_list">Control en la producción</li>						
+			        <li class="new_list">Documentación</li>					
+			     </ul>									
+			 </div>			
+        </div>		
+    </dialog>	
+</div>

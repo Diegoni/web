@@ -18,10 +18,11 @@
 				</div> 	                
 			</div> 	                
 			<div class="col-md-6 text-center"> 	                    
-				<div class="single_service wow fadeInUp" data-wow-delay="2s"> 	                        
+				<div class="single_service wow fadeInUp" data-wow-delay="2s" style="padding-bottom: 1px; !important"> 	                        
 					<i class="icon-gears"></i> 	                        
 					<h2>Resultados de la Auditoría: </h2> 	                        
 					<p>Revisión de No Conformidades. Recomendación de Acciones correctivas y preventivas. Puesta a punto del Sistema de Gestión de Calidad para Auditorías Externas.</p> 	                    
+				    <img src="#base_url#images/muneco.png" class="img-responsive pull-right">
 				</div> 	                
 			</div> 	            
 		</div>             	        

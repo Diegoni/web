@@ -15,7 +15,7 @@
 			</div>                    
 			<div class="single_contact_info">                        
 				<h2>Email</h2>                        
-				<p>cintiazacaria@czcosultoria.com.ar</p>                    
+				<p>cintiazacaria@czconsultoria.com.ar</p>                    
 			</div>                    
 			<div class="single_contact_info">                        
 				<h2>Celular</h2>                        
