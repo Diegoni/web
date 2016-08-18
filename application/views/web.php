@@ -66,11 +66,25 @@ if(isset($message)){
 <script src="<?php echo $base_url?>js/wow.js"></script>
 <script src="<?php echo $base_url?>js/script.js"></script>
 
+<style>
+    .menu_abajo{
+        position: absolute; 
+        bottom: 0; 
+        right: 25;
+    }
+</style>
 <script>
 	$(function() {
 		$('#contacto').trigger('click');
 	});
+	
+	
+    $(".navbar-toggle").on('click', function(){
+        $('#bs-example-navbar-collapse-1').removeClass('menu_abajo');
+    })
+
 </script>
+
 
 
 </body>

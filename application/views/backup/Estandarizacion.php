@@ -37,7 +37,7 @@
 		<div class="section_overlay">	            
 			<div style="background: #333">	                
 				<div class="row">	                    
-					<div class="col-md-6 wow fadeInLeft animated">	                        
+					<div class="col-md-6 wow fadeInLeft animated" data-wow-delay="1s">	                        
 						<div class="row">	                        	
 							<br><br><br>	                        	
 							<h3 style="color: #fff; margin-left : 25px">
@@ -63,4 +63,9 @@
 									<i class="icon-trophy"></i>	                                    
 									<p>Otorgar un alto grado de profesionalismo a los clientes.</p>	
 								</div>                            	                            
-							</div>	                        </div>	                    </div>	                    <div class="col-md-5 col-md-offset-1 wow fadeInRight animated">	                        <div class="imac">	                            <img src="#base_url#images/imac.png" alt="">	                        </div>	                    </div>	                </div>	            </div>            	        </div>	    </section>        </div>
+							</div>	                        
+                        </div>	                    
+                    </div>	                    
+                    <div class="col-md-5 col-md-offset-1 wow fadeInRight animated" data-wow-delay="1s">	
+                        <div class="imac">	                            
+                            <img src="#base_url#images/imac.png" alt="">	                        </div>	                    </div>	                </div>	            </div>            	        </div>	    </section>        </div>
